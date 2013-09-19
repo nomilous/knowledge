@@ -101,16 +101,16 @@ describe 'promise loops', ->
 
         sequence( 
             
-            # for apiQuery in taskList
+            # for apiQuery in taskArray
             for i in [0..9]
 
                 do (i) -> -> doSomethingFunction i
 
         ).then( 
 
-            (resolve) -> resolve[5].should.equal 25; done()
-            (reject)  -> 
-            (notify)  -> 
+            (resultArray) -> resultArray[5].should.equal 25; done()
+            (reject)      -> 
+            (notify)      -> 
 
         )
                 
