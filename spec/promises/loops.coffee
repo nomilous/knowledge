@@ -71,7 +71,7 @@ describe 'promise loops', ->
 
 
 
-    it 'uses the coffee-script loop closure wrapper to perform a sequence of functions', (done) -> 
+    it 'uses the coffee-script loop closure wrapper (see above) to perform a sequence of functions', (done) -> 
 
 
         doSomethingFunction = (arg) -> 
