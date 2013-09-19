@@ -60,7 +60,8 @@ describe 'promise loops', ->
                 return -> value * value
 
 
-        array[  0  ]().should.equal 0
+        firstFunction = array[  0  ]
+        firstFunction().should.equal 0
                                     # 
                                     # good!
                                     # 
